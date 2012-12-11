@@ -42,6 +42,9 @@ module ActionView
   module Helpers
 
     module FormOptionsHelper
+    
+      # Compatible with Formtastic
+      alias :country_select :localized_country_select
 
       # Return select and option tags for the given object and method, using +localized_country_options_for_select+ 
       # to generate the list of option tags. Uses <b>country code</b>, not name as option +value+.
